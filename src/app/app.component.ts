@@ -1,10 +1,15 @@
 import { Component } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+
 export class AppComponent {
-  title = 'butter-client-access';
+  queryField: FormControl = new FormControl();
+  title = 'CMS Admin';
+
 }

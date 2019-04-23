@@ -1,0 +1,13 @@
+<div class="ui container">
+<h2>
+  <div>{{butterPage.testShortText}}</div>
+</h2>
+<hr>
+<h3>
+  <div>{{butterPage.testLongText}}</div>
+</h3>
+<h4>{{butterPage.category}}</h4>
+<div [innerHtml]="butterPage.testWysiwyg | safe: 'html'"></div>
+
+<button (click)="goBack()">go back</button>
+</div>
